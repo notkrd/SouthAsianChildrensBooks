@@ -1,0 +1,25 @@
+{%  load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="{% static 'css/global.css' %}" />
+
+        <title>South Asian Childrens Books List - {{ review.title }}</title>
+</head>
+<body>
+
+<a href="{% url 'reviewslist' %}">HOME</a>
+
+<p><strong>Title: </strong>{{ review.title }}</p>
+<p><strong>Author: </strong>{{ review.author }}</p>
+<p><strong>Publisher: </strong>{{ review.publisher }}</p>
+
+<p><strong>Comments:</strong> {{ review.comments }}</p>
+
+</body>
+</html>

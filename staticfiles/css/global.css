@@ -1,0 +1,8 @@
+ul {
+    list-style: square inside;
+    line-height: 1.8;
+}
+
+a {
+    color: forestgreen;
+}
